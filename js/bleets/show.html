@@ -1,0 +1,10 @@
+<h2>{{BleetShowViewModel.bleet.id}}</h2>
+<blockquote>{{BleetShowViewModel.bleet.content}}</blockquote>
+<p>{{BleetShowViewModel.bleet.likes}}</p>
+<p>{{BleetShowViewModel.bleet.created_at}}</p>
+<p>{{BleetShowViewModel.bleet.updated_at}}</p>
+
+<h2>Edit</h2>
+<div data-bleet-form data-bleet="BleetShowViewModel.bleet"></div>
+
+<img data-ng-src="{{BleetShowViewModel.bleet.photoUrl}}" src="#" alt="{{BleetShowViewModel.bleet.title}}" />

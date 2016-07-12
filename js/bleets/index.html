@@ -1,0 +1,9 @@
+<h2>New Bleet</h2>
+
+<div data-bleet-form data-grumble="BleetIndexViewModel.newBleet"></div>
+
+<h2>These are all the Bleets</h2>
+
+<div data-ng-repeat="bleet in BleetIndexViewModel.bleets | orderBy:'-created_at'">
+  <p><a data-ui-sref="bleetShow({id: bleet.id})">{{bleet.title}}</a></p>
+</div>
